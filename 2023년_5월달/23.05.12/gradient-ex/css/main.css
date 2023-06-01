@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.photo-list {
+  width: 1000px;
+  height: 550px;
+  padding: 0;
+  background-color: antiquewhite;
+}
+
+.photo-list li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 30px;
+}

@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+.wrap {
+    width: 100%;
+    height: 700px;
+}
+
+.inner {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+/* header */
+header {
+    height: 100px;
+    background-color: #FFAFD8;
+    line-height: 100px;
+}
+
+.logo {
+    width: 30%;
+    height: 100px;
+    background-color: #FFAFB0;
+}
+
+/* slide1 */
+.slide1 {
+    height: 150px;
+    line-height: 150px;
+}
+
+.menu {
+    height: 150px;
+    background-color: #EEB7B4;
+}
+
+/* slide2 */
+.slide2 {
+    height: 150px;
+    line-height: 150px;
+    background-color: #F2CFA5;
+}
+
+/* content */
+.content {
+    height: 200px;
+    line-height: 200px;
+}
+
+.notice {
+    width: calc(1200px / 3);
+    background-color: #FCFFB0;
+    float: left;
+}
+
+.gallery {
+    width: calc(1200px / 3);
+    background-color: #AEE4FF;
+    float: left;
+}
+
+.shortcut {
+    width: calc(1200px / 3);
+    background-color: #B5C7ED;
+    float: left;
+}
+
+footer {
+    height: 100px;
+}
+
+.f {
+    width: 80%;
+    line-height: 50px;
+    float: left;
+}
+
+.f-menu {
+    height: 50px;
+    background-color: #C4F4FE;
+}
+
+.copyright {
+    height: 50px;
+    background-color: #BEE9B4;
+}
+
+.f-site {
+    width: 20%;
+    height: 100px;
+    line-height: 100px;
+    background-color: #FDFA87;
+    float: left;
+}

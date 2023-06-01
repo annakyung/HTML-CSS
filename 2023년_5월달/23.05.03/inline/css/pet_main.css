@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+}
+
+h2 {
+  width: 200px;
+  height: 60px;
+  background-color: rgb(146, 30, 255);
+  margin: 30px auto;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 30px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.ul1 {
+  width: 1000px;
+  height: 70px;
+  background-color: rgb(180, 153, 255);
+  margin: auto;
+  text-align: center;
+}
+
+.ul1 li {
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin: 0 17px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+.ul1 li:hover {
+  border-bottom: 3px solid rgb(146, 30, 255);
+}
+
+img {
+  float: left;
+}
+
+.dog {
+  width: 700px;
+  display: inline-block;
+  margin: auto;
+  background-color: aquamarine;
+}
+
+.dog p {
+  clear: right;
+}
+
+.box1 {
+    background-color: rgb(197, 255, 104);
+    float: left;
+}
+
+.box2 {
+    background-color: rgb(255, 143, 99);
+    float: left;
+}
+
+.box3 {
+    background-color: rgb(108, 196, 255);
+    float: right;
+}
+
+.box4 {
+    background-color: rgb(255, 151, 229);
+    clear: both;
+}
+
+
+
+
+
+
+.div2 {
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  padding: 0 45px 30px;
+  transition: all 0.2s linear;
+}
+
+img:hover {
+  filter: brightness(0.7);
+}
+
+.ul2 {
+  display: inline-block;
+  margin: auto;
+}
+
+.ul2 li {
+  display: inline-block;
+}
+
+.dog_site {
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+}
+
+.img_dog {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  float: left;
+}
+
+.img_dog img {
+  width: 400px;
+}
+
+.dog_no {
+  width: 400px;
+  height: 400px;
+  padding: 30px 50px;
+  float: left;
+  text-align: start;
+}

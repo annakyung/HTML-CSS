@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+input {
+  width: 100px;
+  height: 30px;
+  transition: 0.5s;
+}
+
+input:focus {
+  background-color: #aaa;
+  color: #fff;
+  width: 200px;
+  height: 80px;
+  font-size: 30px;
+  /* transition: all ease-in-out 0.3s; */
+  /* focus에 줘도 작동은 하지만 자연스럽지가 않음 */
+}
+
+#chk {
+  width: 20px;
+  height: 20px;
+}
+
+/* checked 했을 때 input까지 포함됨 */
+#chk:checked ~ input {
+  width: 50px;
+  height: 50px;
+}
+
+#link {
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#link:hover {
+  background-color: lightblue;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fafafa;
+  text-decoration: line-through;
+  /* 중간에 선이 그임 */
+  text-shadow: 2px 2px 5px black;
+}
+
+#link:active {
+  background-color: blue;
+}
+
+/* 선택된 영역의 스타일을 변경하게 도와줌 */
+p::selection {
+  background-color: rgba(0, 140, 255, 0.5);
+  color: blueviolet;
+}
+
+span {
+  font-weight: 800;
+  color: palevioletred;
+  position: relative;
+}
+
+span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  /* 처음에 안 보이게 하려고 0으로 함 */
+  height: 5px;
+  bottom: -5px;
+  /* left: 0; */
+  /* background-color: rgb(175, 64, 101); */
+  background: linear-gradient(
+    90deg,
+    #fedee3,
+    #fcc2ce,
+    #e4f8ba,
+    #feadbb,
+    #b4dc87
+  );
+}
+
+p:hover span::after {
+  width: 100%;
+  transition: width 0.4s;
+}

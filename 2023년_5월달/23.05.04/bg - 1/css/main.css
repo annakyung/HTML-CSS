@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+body {
+  background-image: url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: 130px 150px;
+}
+
+.my {
+  width: 350px;
+  background-color: palegreen;
+  padding: 20px;
+  margin: 10px;
+  border: 5px dotted #222;
+}
+
+#my1 {
+  background-clip: border-box;
+}
+
+#my2 {
+  background-clip: padding-box;
+}
+
+#my3 {
+  background-clip: content-box;
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+}
+
+li {
+  background-image: url(../images/book.png);
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  line-height: 30px;
+}
+
+.bg {
+  width: 1000px;
+  margin: auto;
+}
+.bg div {
+  width: 327px;
+  height: 200px;
+  border: 1px solid black;
+  display: inline-block;
+  background-image: url(../images/a.jpeg);
+  background-repeat: no-repeat;
+}
+
+.bg .a {
+  background-size: auto;
+}
+
+.bg .b {
+  background-size: 200px 200px;
+}
+
+.bg .c {
+  background-size: 70%;
+}
+
+.bg .d {
+  background-size: cover;
+}
+
+.bg .e {
+  background-size: contain;
+}
+
+.bg .f {
+  background-size: initial;
+}
+
+.background {
+  width: 100%;
+}
+
+.bg2 {
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  background-color: aqua;
+}
+
+.city {
+  width: 800px;
+  height: 400px;
+  background-image: url(../images/bg2.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: contain;
+}
+
+.city p {
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  text-shadow: 4px 4px 1px black;
+}

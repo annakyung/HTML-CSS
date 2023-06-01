@@ -1,0 +1,114 @@
+@charset "utf-8";
+.box1 {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: aqua;
+}
+.box2 {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: rgb(255, 238, 0);
+}
+/* 애니메이션 */
+.box1 {
+  animation-name: umm;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes umm {
+  from {
+    border: 1px solid blue;
+  }
+  to {
+    border: 10px solid yellow;
+    border-radius: 100px;
+  }
+}
+.box2 {
+  animation-name: ahha;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes ahha {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: scale(1.2);
+    border-radius: 100px;
+  }
+  100% {
+    transform: rotate(100deg);
+  }
+}
+
+.box3 {
+  float: left;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: rgb(0, 102, 255);
+}
+.box3 {
+  animation: lalala 1s ease-in alternate infinite, background 3s infinite;
+}
+@keyframes lalala {
+  from {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+@keyframes background {
+  from {
+    background-color: rgb(18, 1, 255);
+  }
+  20% {
+    background-color: cornflowerblue;
+  }
+  50% {
+    background-color: darkgreen;
+  }
+  90% {
+    background-color: rgb(255, 0, 0);
+  }
+  to {
+    background-color: blueviolet;
+  }
+}
+.box4 {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+.box4 {
+  animation: banjjak infinite 1s linear;
+}
+@keyframes banjjak {
+  from {
+    border-radius: 0px 0px 0px 100px;
+    background-color: rgb(255, 0, 0);
+  }
+  25% {
+    border-radius: 0px 0px 100px 0px;
+  }
+  50% {
+    border-radius: 0px 100px 0px 0px;
+  }
+  75% {
+    border-radius: 100px 0px 0px 0px;
+  }
+  to {
+    background-color: rgb(145, 255, 0);
+  }
+}

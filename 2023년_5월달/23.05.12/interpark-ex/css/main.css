@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/* 공통클래스 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.inner {
+  width: 1600px;
+  height: 800px;
+  margin: 30px auto;
+  background-color: wheat;
+}
+
+.inner h1 {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.musical_div {
+  width: 1425px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.musical {
+  width: 1425px;
+  height: 600px;
+}
+
+.musical > div {
+  float: left;
+  width: 345px;
+  height: 600px;
+  margin-right: 15px;
+  background-color: white;
+}
+
+.musical > div:last-child {
+  margin-right: 0;
+}
+
+.ticket-link {
+  display: block;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+}
+
+.ticket-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  /* overfloaw: hidden : 넘치는 것을 보이게 하지마라!(= 그림 숨기기) */
+  overflow: hidden;
+}
+
+.ticket-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ticket-rank {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 700;
+  z-index: 1;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+
+/* 영역::after : 이 영역 다음에 */
+/* 영역::befor : 이 영역 전에 */
+/* ::after랑 content는 항상 같이 써야함 */
+.ticket-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(to top, black, transparent); */
+  background: linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.8));
+}
+
+.ticket-info {
+  padding: 20px 10px;
+  background-color: #fff;
+}
+
+.ticket-info-list li {
+  margin-bottom: 5px;
+}
+
+.ticket-title {
+  display: block;
+  color: #111;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  height: 44px;
+}
+
+.ticket-hall {
+  display: block;
+  font-size: 15px;
+  line-height: 15px;
+  color: #666;
+}
+
+.ticket-date {
+  font-size: 14px;
+  color: #999;
+  line-height: 17px;
+}
+
+.ticket-sale {
+  display: inline-block;
+  font-size: 11px;
+  border: 1px solid rgba(239, 62, 67, 0.3);
+  color: #ef3e43;
+  border-radius: 3px;
+  padding: 2px 8px;
+}

@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+/*
+전체 가로 : 1000px
+전체 높이 : 650px
+헤더 가로 : 200px
+슬라이드 높이 : 350px
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 전체 */
+.wrap {
+  width: 1000px;
+  height: 650px;
+  margin: 0 auto;
+}
+
+/* 헤더 */
+header {
+  width: 200px;
+  height: 650px;
+  float: left;
+  background-color: rgb(231, 231, 231);
+}
+
+/* 탑로고 */
+.t_logo {
+  width: 200px;
+  height: 100px;
+}
+
+.t_logo p {
+  text-align: center;
+  line-height: 100px;
+  font-size: 27px;
+  font-weight: bold;
+  background: linear-gradient(blue, red);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* 탑메뉴 */
+.t_menu {
+  width: 200px;
+  height: 160px;
+  position: relative;
+}
+
+.b_nav > li {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: black;
+}
+
+.b_nav > li > a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.s_nav {
+  z-index: 1;
+  width: 200px;
+  height: 250px;
+  top: 0;
+  left: 100%;
+  position: absolute;
+  background-color: gray;
+  display: none;
+}
+
+.s_nav a {
+  color: white;
+}
+
+.b_nav > li:hover {
+  background-color: gray;
+}
+
+.b_nav > li:active {
+  background-color: rgb(90, 90, 90);
+}
+
+.b_nav > li:hover .s_nav {
+  display: block;
+}
+
+.s_nav > li:hover {
+  background-color: rgb(90, 90, 90);
+}
+
+/* 메인 */
+.main {
+  width: 800px;
+  height: 650px;
+  float: left;
+}
+
+/* 이미지 슬라이드 */
+.img_slide {
+  width: 800px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.img_slide img {
+  width: 800px;
+}
+
+.img_slide ul {
+  width: 2400px;
+  font-size: 0;
+  margin-left: 0;
+  animation: scroll 10s infinite;
+}
+
+.img_slide ul li {
+  width: 800px;
+  height: 350px;
+  float: left;
+  position: relative;
+}
+
+@keyframes scroll {
+  0% {
+    margin-left: 0;
+  }
+
+  28% {
+    margin-left: -800px;
+  }
+
+  33% {
+    margin-left: -800px;
+  }
+
+  61% {
+    margin-left: -1600px;
+  }
+
+  66% {
+    margin-left: -1600px;
+  }
+
+  94% {
+    margin-left: 0;
+  }
+
+  99% {
+    margin-left: 0;
+  }
+}
+
+.img_slide span {
+  width: 300px;
+  height: 30px;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* js ver */
+/* .img_slide ul {
+  width: 2400px;
+  font-size: 0;
+}
+
+.img_slide ul li {
+  display: inline-block;
+} */
+
+/* 컨텐츠 */
+.contents {
+  width: 800px;
+  height: 200px;
+}
+
+.contents div {
+  width: 295px;
+  height: 185px;
+  float: left;
+  margin: 7px;
+}
+
+.contents div:last-child {
+  width: 163px;
+}
+
+.contents span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 공지사항 */
+.notice ul {
+  margin-top: 8px;
+}
+
+.notice ul li {
+  height: 38px;
+  line-height: 38px;
+}
+
+.notice ul li a {
+  font-size: 14px;
+  color: black;
+}
+
+.notice ul li a span {
+  font-size: 14px;
+  float: right;
+}
+
+.notice ul li:nth-child(2n) {
+  background-color: gray;
+}
+
+/* 갤러리 */
+.gallery ul {
+  margin-top: 8px;
+}
+
+.gallery ul li {
+  width: 91px;
+  height: 91px;
+  margin-top: 30px;
+  margin-right: 10px;
+  float: left;
+}
+
+.gallery ul li:last-child {
+  margin-right: 0px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+/* 바로가기 */
+.shortcut {
+  overflow: hidden;
+  position: relative;
+}
+
+.shortcut img {
+  z-index: 0;
+  height: 100%;
+}
+
+.shortcut p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px 8px;
+}
+
+/* 푸터 */
+footer {
+  width: 800px;
+  height: 100px;
+  background-color: royalblue;
+}
+
+/* 하단로고 */
+.b_logo {
+  width: 200px;
+  height: 100px;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+/* 사이트 */
+.site {
+  width: 600px;
+  height: 100px;
+  float: left;
+}
+
+/* 하단메뉴 */
+.bt_menu {
+  width: 600px;
+  height: 50px;
+}
+
+.bt_menu ul {
+  text-align: center;
+}
+
+.bt_menu ul li {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+/* 텍스트 */
+.text {
+  width: 600px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}

@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.navi {
+  width: 960px;
+  height: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.navi ul {
+  width: 800px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  list-style: none;
+  text-align: center;
+}
+
+.navi ul li {
+  float: left;
+  width: 150px;
+  padding: 10px;
+}
+
+/* a태그에 링크했을 때, a태그에 방문했을 때 */
+/* link : 방문 전 링크 상태 */
+/* visited : 방문 후 링크 상태 */
+.navi a:link,
+.navi a:visited {
+  display: block;
+  font-size: 14px;
+  color: #000;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* hover랑 focus 비슷함 */
+/* hover : 커서를 올렸을 때 */
+/* focus : 초점을 줬을 때(=클릭했을 때) */
+.navi a:hover,
+.navi a:focus {
+  background-color: #222;
+  color: #fff;
+}
+
+/* active : 누르고 떼기전에 */
+.navi a:active {
+  background-color: red;
+}
+
+#signup {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #222;
+  border-radius: 20px;
+  margin: 30px auto;
+}
+
+#signup fieldset {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+#signup legend {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+#signup ul li {
+  list-style: none;
+  line-height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 2px;
+}
+
+#signup button {
+  padding: 7px 25px;
+  border: 1px solid #222;
+  border-radius: 30px;
+  display: block;
+  margin: auto;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#signup button:hover,
+#signup button:focus {
+  background-color: #222;
+  color: white;
+}
+
+#signup button:active {
+  background-color: rgb(114, 0, 0);
+}
+
+/* first-of-type : 첫번째 요소
+(=fieldset 안에 첫번째 요소 label에 관한것) */
+#signup fieldset:first-of-type label {
+  float: left; /* 얘를 통해서 간격을 맞춤 */
+  font-size: 13px;
+  width: 60px;
+}
+
+/* input의 타입이 text랑 tel인 것 */
+/* #signup input[type="text"],
+input[type="tel"] {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 200px;
+  border-radius: 3px;
+} */
+
+/* input의 타입이 radio가 아닌 것 = text랑 tel */
+/* 이렇게 사용해도 됨 */
+#signup input:not([type="radio"]) {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 200px;
+  border-radius: 3px;
+}
+
+#signup input:not([type="radio"]):hover {
+  border-color: red;
+}
+
+/* 체크했을 때 label의 색깔을 바꿈 */
+#signup input:checked + label {
+  color: red;
+  font-weight: bold;
+}

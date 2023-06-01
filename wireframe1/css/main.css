@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+div {
+  text-align: center;
+}
+
+.wrap {
+  width: 100%;
+  height: 700px;
+}
+
+.inner {
+  width: 1200px;
+  height: 700px;
+  background-color: blue;
+  margin: auto;
+}
+
+/* A영역 = header영역 */
+.header {
+  background-color: rgb(142, 21, 255);
+  height: 100px;
+  line-height: 100px;
+}
+
+.logo {
+  background-color: rgb(191, 101, 226);
+  width: 20%;
+  height: 100px;
+  float: left;
+  position: relative;
+}
+
+.logo > .e {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu {
+  background-color: rgb(216, 35, 252);
+  width: 40%;
+  height: 100px;
+  float: right;
+}
+
+/* B영역 = slide영역 */
+.slide {
+  background-color: rgb(6, 69, 204);
+  width: auto;
+  height: 300px;
+  line-height: 300px;
+  position: relative;
+}
+
+.slide > .a {
+  position: absolute;
+  width: 15%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* C영역 = content영역 */
+.content {
+  background-color: rgb(94, 51, 0);
+  height: 200px;
+  line-height: 200px;
+}
+
+.content div {
+  float: left;
+  width: calc(1200px / 3);
+  height: 200px;
+}
+
+.notice {
+  background-color: rgb(255, 186, 96);
+  position: relative;
+}
+
+.notice > .b {
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner {
+  background-color: rgb(255, 163, 43);
+  position: relative;
+}
+
+.banner > .c {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shortcut {
+  background-color: rgb(207, 142, 0);
+  position: relative;
+}
+
+.shortcut > .c {
+    position: absolute;
+    width: 40%;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+/* D영역 = footer영역 */
+.footer {
+  background-color: rgb(160, 0, 0);
+  height: 100px;
+  line-height: 100px;
+}
+
+.footer div {
+  float: left;
+  height: 100px;
+}
+
+.f-logo {
+  background-color: rgb(255, 69, 69);
+  width: 20%;
+}
+
+.copyright {
+  background-color: rgb(255, 44, 44);
+  width: 60%;
+}
+
+.sns {
+  background-color: rgb(255, 139, 139);
+  width: 20%;
+}

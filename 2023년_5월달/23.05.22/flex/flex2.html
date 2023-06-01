@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플렉스 연습2</title>
+    <style>
+      .container {
+        width: 700px;
+        background-color: aquamarine;
+        border: 1px solid #222;
+        margin-top: 30px;
+        color: #fff;
+        display: flex;
+      }
+
+      .box {
+        width: 80px;
+        background-color: #222;
+        padding: 5px 45px;
+        margin: 5px;
+      }
+
+      #opt1 {
+        /* 줄바꿈 없음(기본값) */
+        flex-wrap: nowrap;
+      }
+
+      #opt2 {
+        /* 줄바꿈 함 */
+        flex-wrap: wrap;
+      }
+
+      #opt3 {
+        /* 줄바꿈 하는데 아이템을 역순으로 배치 */
+        flex-wrap: wrap-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="opt1">
+      <div class="box"><p>1</p></div>
+      <div class="box"><p>2</p></div>
+      <div class="box"><p>3</p></div>
+      <div class="box"><p>4</p></div>
+      <div class="box"><p>5</p></div>
+      <div class="box"><p>6</p></div>
+    </div>
+
+    <div class="container" id="opt2">
+      <div class="box"><p>1</p></div>
+      <div class="box"><p>2</p></div>
+      <div class="box"><p>3</p></div>
+      <div class="box"><p>4</p></div>
+      <div class="box"><p>5</p></div>
+      <div class="box"><p>6</p></div>
+    </div>
+
+    <div class="container" id="opt3">
+      <div class="box"><p>1</p></div>
+      <div class="box"><p>2</p></div>
+      <div class="box"><p>3</p></div>
+      <div class="box"><p>4</p></div>
+      <div class="box"><p>5</p></div>
+      <div class="box"><p>6</p></div>
+    </div>
+  </body>
+</html>

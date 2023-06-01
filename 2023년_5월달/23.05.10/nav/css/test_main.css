@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*
+wrap width : 960px
+navi width : 960px
+navi height : 60px
+navi ul width : 800px
+navi ul li width : 150px
+navi a font-size : 14px
+*/
+
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.navi {
+  width: 960px;
+  height: 60px;
+  border-bottom: 1px solid black;
+
+  padding-bottom: 10px;
+}
+
+.navi ul {
+  width: 800px;
+  /* margin: 0 auto; */
+  list-style: none;
+
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.navi ul li {
+  float: left;
+  width: 150px;
+  /* padding-top: 30px; */
+  /* display: inline-block; */
+  /* text-align: center; */
+  padding: 10px;
+}
+
+.navi a:link,
+.navi a:visited {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+
+  display: block;
+  padding: 10px;
+}
+
+.navi a:hover,
+.navi a:focus {
+  background-color: black;
+  color: white;
+}
+
+.navi a:active {
+  background-color: red;
+}
+
+.contents {
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  margin: 30px auto;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+#intro:target {
+  background-color: yellowgreen;
+}
+
+#room:target {
+  background-color: skyblue;
+}
+
+#reservation:target {
+  background-color: beige;
+}

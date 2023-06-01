@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+.wrap {
+    width: 100%;
+    height: 700px;
+}
+
+.inner {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+/* header영역 */
+header {
+    height: 100px;
+    background-color: #00CCFF;
+    line-height: 100px;
+}
+
+.logo {
+    width: 20%;
+    height: 100px;
+    background-color: #0099FF;
+    float: left;
+}
+
+.menu {
+    width: 50%;
+    height: 100px;
+    background-color: #0066FF;
+    float: right;
+}
+
+/* slide영역 */
+.slide {
+    background-color: #3399FF;
+    height: 300px;
+    line-height: 300px;
+}
+
+/* content영역 */
+.content {
+    height: 200px;
+    line-height: 200px;
+}
+
+.notice {
+    background-color: #33CCFF;
+    width: calc(1200px / 3);
+    height: 200px;
+    float: left;
+}
+
+.banner {
+    background-color: #0033FF;
+    width: calc(1200px / 3);
+    height: 200px;
+    float: left;
+}
+
+.shortcut {
+    background-color: #66CCFF;
+    width: calc(1200px / 3);
+    height: 200px;
+    float: left;
+}
+
+/* footer영역 */
+footer {
+    height: 100px;
+    line-height: 100px;
+}
+
+.f-logo {
+    background-color: #6699FF;
+    width: 20%;
+    height: 100px;
+    float: left;
+}
+
+/* f영역 */
+.f {
+    height: 100px;
+}
+
+.f-menu {
+    background-color: #0066CC;
+    height: 50px;
+    line-height: 50px;
+}
+
+.copyright {
+    background-color: #3366FF;
+    height: 50px;
+    line-height: 50px;
+}

@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrap {
+  width: 1900px;
+  height: 1800px;
+}
+
+/* header */
+header {
+  width: 400px;
+  height: 1500px;
+  float: left;
+}
+
+/* .logo_img */
+/* .logo_img {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  display: flex;
+  /* justify-content: center; */
+/* align-items: center;
+} */
+
+.logo_img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  animation: obj2 1s 0.7s ease-in-out;
+  box-sizing: border-box;
+}
+
+/* .logo_img div {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  left: -30px;
+  top: 0;
+  border-radius: 200px;
+  border: 1px solid #d8d8d8;
+} */
+
+.logo_img img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  animation: bing 4s linear infinite;
+}
+
+@keyframes bing {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* menu */
+.menu {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  font-size: 50px;
+  top: 250px;
+  left: 200px;
+}
+
+.menu ul li:first-child {
+  font-weight: bold;
+  text-shadow: 15px 15px 15px;
+}
+
+/* section */
+section {
+  width: 1200px;
+  height: 1500px;
+  float: left;
+  background-color: saddlebrown;
+}
+
+/* .main_images */
+.main_images {
+  width: 100%;
+  height: 1000px;
+  margin-top: 200px;
+  padding: 30px;
+  background-color: wheat;
+}
+
+.main_images div {
+  width: 32%;
+  float: left;
+}
+
+.main_images .img1 {
+  height: 400px;
+  margin-right: 20px;
+  background-color: yellow;
+}
+
+.main_images .img2 {
+  height: 300px;
+  margin-right: 20px;
+  background-color: rgb(58, 58, 47);
+}
+
+.main_images .img3 {
+  height: 400px;
+  background-color: rgb(190, 190, 73);
+}
+
+/* nav */
+nav {
+  width: 300px;
+  height: 1500px;
+  float: left;
+  background-color: blueviolet;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 200px;
+  float: left;
+  margin-top: auto;
+  background-color: aquamarine;
+}

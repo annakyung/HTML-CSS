@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+@font-face {
+  font-family: "KIMM_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 공통 클래스 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+ul {
+  list-style: none;
+}
+
+#container {
+  width: 1200px;
+  margin: 0 auto;
+  /* background-color: rgb(179, 206, 255); */
+}
+
+/* 상단 */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(138, 138, 255);
+}
+
+.logo {
+  float: left;
+  width: 250px;
+  height: 100px;
+  line-height: 100px;
+  margin-left: 20px;
+  font-weight: 900;
+}
+
+.logo h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  float: right;
+  width: 900px;
+  height: 100px;
+  margin-top: 40px;
+}
+
+.topMenu {
+  width: 800px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.topMenu > li {
+  float: left;
+}
+
+.topMenu > li > a {
+  display: block;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+  padding: 20px 60px;
+}
+
+.topMenu > li > a:hover {
+  color: rgb(74, 74, 255);
+}
+
+/* 메인 */
+.contents {
+  width: 1000px;
+  margin: 50px auto;
+}
+
+main > section {
+  margin-top: 60px;
+}
+
+main h2 {
+  line-height: 36px;
+  font-family: "KIMM_Bold";
+}
+
+main div {
+  margin-top: 20px;
+}
+
+.detail p {
+  line-height: 36px;
+}
+
+.detail img {
+  float: left;
+  margin-right: 50px;
+  border-radius: 20px;
+}
+
+.schedule li {
+  line-height: 36px;
+}
+
+/* 하단 */
+footer {
+  width: 1200px;
+  height: 100px;
+  border-top: 2px solid #222;
+}
+
+.bottomMenu {
+  width: 100%;
+  height: 20px;
+  margin-left: 20px;
+}
+
+.bottomMenu > ul {
+  margin-top: 15px;
+}
+
+.bottomMenu > ul > li {
+  float: left;
+  padding: 3px 20px;
+  border-right: 1px solid #ddd;
+}
+
+.bottomMenu > ul > li:last-child {
+  border: none;
+}
+
+.bottomMenu > ul > li:hover {
+  background-color: rgb(225, 194, 255);
+}
+
+.bottomMenu > ul > li > a {
+  color: #222;
+}
+
+.bottomMenu > ul > li > a:visited {
+  color: #666;
+}

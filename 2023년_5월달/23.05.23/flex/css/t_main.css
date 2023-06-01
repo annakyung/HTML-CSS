@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  /* inherit : 부모 요소에 있는 값을 따라가라 */
+  color: inherit;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.tablist {
+  display: flex;
+  background-color: aquamarine;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.tab {
+  line-height: 60px;
+  font-weight: 800;
+  padding: 0 15px;
+  position: relative;
+}
+
+.tab.selected::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  right: 13px;
+  bottom: -5px;
+  height: 5px;
+  background-color: blueviolet;
+}
+
+.row_wrap {
+  width: 400px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.row {
+  display: flex;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.row input {
+  background-color: beige;
+  border: 1px solid rgb(215, 212, 233);
+}
+
+.row input:focus {
+  outline: none;
+}
+
+.txtfield.big {
+  height: 150px;
+}
+
+.title_content {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.txtfield {
+  width: 300px;
+  height: 38px;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.map_wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  height: 100px;
+  background-color: #222;
+  line-height: 100px;
+  padding: 0 10px;
+  margin-top: auto;
+}

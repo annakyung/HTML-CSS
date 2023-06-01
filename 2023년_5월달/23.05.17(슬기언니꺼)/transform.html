@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css 변형 함수 익히기</title>
+    <style>
+      div {
+        width: 500px;
+        height: 150px;
+        background-color: black;
+        margin: 0 auto;
+        transition: 1.5s;
+      }
+
+      p {
+        color: #fff;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 150px;
+        text-align: center;
+      }
+      div:hover {
+        transform: skewX(-25deg) rotate(360deg);
+        background-color: crimson;
+      }
+      p:hover {
+        transform: rotateZ(5deg) scale(1.5);
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>CSS 변형 함수 익히기</p>
+    </div>
+  </body>
+</html>

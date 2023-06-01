@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>change</title>
+    <style>
+      #container {
+        width: 1000px;
+        height: 200px;
+        float: left;
+      }
+      .nemo {
+        float: left;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transition: 1s;
+      }
+      .nemo:hover {
+        transform: rotate(360deg);
+        background-color: aqua;
+      }
+      .one {
+        margin: 10px;
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transition: 1s;
+      }
+      .one:hover {
+        transform: scale(0.5);
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="nemo"></div>
+      <div class="one"></div>
+    </div>
+  </body>
+</html>

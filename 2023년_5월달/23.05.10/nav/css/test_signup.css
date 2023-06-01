@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/*
+wrap width : 960px
+navi width : 960px
+navi height : 60px
+navi ul width : 800px
+navi ul li width : 150px
+navi a font-size : 14px
+*/
+
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.navi {
+  width: 960px;
+  height: 60px;
+  border-bottom: 1px solid black;
+
+  padding-bottom: 10px;
+}
+
+.navi ul {
+  width: 800px;
+  /* margin: 0 auto; */
+  list-style: none;
+
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.navi ul li {
+  float: left;
+  width: 150px;
+  /* padding-top: 30px; */
+  /* display: inline-block; */
+  /* text-align: center; */
+  padding: 10px;
+}
+
+.navi a:link,
+.navi a:visited {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+
+  display: block;
+  padding: 10px;
+}
+
+.navi a:hover,
+.navi a:focus {
+  background-color: black;
+  color: white;
+}
+
+.navi a:active {
+  background-color: red;
+}
+
+/*
+signup width : 400px
+signup fieldset border-color: #ccc
+signup legend font-size : 16px
+font-weight : 600
+signup button font-size : 16px
+font-family: Verdana, Geneva, Tahoma, sans-serif
+*/
+
+#signup {
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+#signup fieldset {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+#signup legend {
+  /* width: 100px; */
+  font-size: 16px;
+  font-weight: 600;
+
+  padding: 0 15px;
+}
+
+#signup ul li {
+  list-style: none;
+
+  line-height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+#signup button {
+  padding: 7px 25px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#signup button:hover,
+#signup button:focus {
+  background-color: black;
+  color: white;
+}
+
+#signup button:active {
+  background-color: red;
+}
+
+#signup fieldset:first-of-type label {
+  font-size: 13px;
+  width: 60px;
+
+  float: left;
+}
+
+#signup input:not([type="radio"]) {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 200px;
+  border-radius: 3px;
+}
+
+#signup input:not([type="radio"]):hover {
+  border-color: red;
+}
+
+#signup input:checked + label {
+  color: red;
+  /* font-size: 17px; */
+  font-weight: bold;
+}

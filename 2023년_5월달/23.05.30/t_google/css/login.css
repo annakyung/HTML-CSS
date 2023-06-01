@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  background-color: #e9e4e4;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 5px;
+  max-width: 400px;
+  /* 400px 이상으로 커지지마라 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-group i {
+  color: #777;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  outline: none;
+  /* input을 클릭해도 선이 안 생김 */
+}
+
+/* 타입이 submit인 버튼을 선택 */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4284f3;
+  border: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #2e6edb;
+}
+
+input[type="button"] {
+  padding: 5px;
+  font-size: 14px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: #fbbc05;
+  border: none;
+}
+
+input[type="button"]:hover {
+  background-color: #e4ac04;
+}

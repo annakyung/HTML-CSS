@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/t_main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>나의 웹사이트</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- 타이틀 -->
+      <h1>
+        MY <br />
+        web- design
+        <span>
+          portfolio <br />
+          Collection
+        </span>
+      </h1>
+
+      <!-- 오브젝트 -->
+      <div class="object">
+        <div class="border">
+          <img src="images/lp.png" alt="로고" />
+        </div>
+      </div>
+    </header>
+
+    <!-- object -->
+    <section>
+      <!-- conts01 -->
+      <div class="contents">
+        <a href="#"><img src="images/img1.jpg" alt="이미지1" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지2" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지3" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지4" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지5" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지6" /></a>
+      </div>
+
+      <!-- conts02 -->
+
+      <div class="contents">
+        <a href="#"><img src="images/img1.jpg" alt="이미지7" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지8" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지9" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지10" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지11" /></a>
+      </div>
+
+      <!-- conts03 -->
+      <div class="contents">
+        <a href="#"><img src="images/img1.jpg" alt="이미지12" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지13" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지14" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지15" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지16" /></a>
+        <a href="#"><img src="images/img1.jpg" alt="이미지17" /></a>
+      </div>
+    </section>
+
+    <!-- nav -->
+    <nav>
+      <a href="#" class="active">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </nav>
+    <!-- javascript -->
+    <script>
+      const navLink = document.querySelector("nav a");
+
+      navLink.addEventListener("click", function(){
+        navLink.classList.toggle("active");
+      });
+    </script>
+
+    <!-- footer -->
+    <footer>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-youtube" style="color: #ffffff"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+          </a>
+        </li>
+      </ul>
+      <p>Copyright &copy; 2023 Annakyung</p>
+    </footer>
+  </body>
+</html>

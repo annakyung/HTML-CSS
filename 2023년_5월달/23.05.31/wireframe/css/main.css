@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "CWDangamAsac-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 공통 클래스 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "S-CoreDream-3Light";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* wrap */
+.wrap {
+  width: 100%;
+  height: 2000px;
+  /* background-color: aqua; */
+}
+
+/*  */
+/* header */
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+/* t_logo */
+.t_logo {
+  width: 20%;
+  height: 80px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.t_logo p {
+  font-size: 33px;
+  font-family: "CWDangamAsac-Bold";
+}
+
+/* t_nav1 */
+.t_nav1 {
+  width: 55%;
+  height: 80px;
+  float: left;
+}
+
+.t_nav1 ul {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.t_nav1 ul li {
+  display: inline-block;
+  width: 150px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+}
+
+/* t_nav2 */
+.t_nav2 {
+  width: 25%;
+  height: 80px;
+  float: left;
+}
+
+.t_nav2 ul {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.t_nav2 ul li {
+  display: inline-block;
+}
+
+/* search_bar */
+.search_bar {
+  width: 350px;
+  height: 45px;
+  margin-right: 20px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: flex;
+  align-items: baseline;
+  padding: 4px 20px;
+}
+
+.search_bar input {
+  height: 35px;
+  margin-left: 10px;
+  border: 0;
+  outline: none;
+}
+
+/*  */
+/* contents */
+#contents {
+  width: 100%;
+  height: 1700px;
+  /* background-color: saddlebrown; */
+}
+
+/* video_var */
+.video_var {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  border-right: 1px solid black;
+  margin-top: 80px;
+  padding-top: 150px;
+  /* float: left; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.video_var iframe {
+  width: 300px;
+  height: 180px;
+  margin-bottom: 50px;
+}
+
+.video_var span {
+  color: #fa7991;
+  font-family: "CWDangamAsac-Bold";
+  font-size: 20px;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+
+.video_var p {
+  text-decoration: underline;
+}
+
+/* main */
+.main {
+  width: 80%;
+  height: 1700px;
+  margin-top: 80px;
+  float: right;
+  /* background-color: chartreuse; */
+}
+
+/* main_img */
+.main_img {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  /* background-color: wheat; */
+}
+
+.main_img img {
+  height: 100%;
+  float: right;
+  margin-right: 10%;
+}
+
+.main_img h1 {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-size: 60px;
+  font-family: "CWDangamAsac-Bold";
+}
+
+h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  /* inline-block에만 애니메이션 적용 가능 */
+  animation: bounce 0.3s ease infinite alternate;
+  /* font-family: "Titan One", cursive; */
+  font-family: "CWDangamAsac-Bold";
+  font-size: 80px;
+  /* color: #fff; */
+  color: #fbd6e5;
+  /* #ccc */
+  text-shadow: 0 1px 0 #fbb0c1, 0 2px 0 #fbb0c1, 0 3px 0 #fbb0c1,
+    0 4px 0 #fbb0c1, 0 5px 0 #fbb0c1, 0 6px 0 transparent, 0 7px 0 transparent,
+    0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+h1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+h1 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+h1 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+h1 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+h1 span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+h1 span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+h1 span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+h1 span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+h1 span:nth-child(11) {
+  animation-delay: 1s;
+}
+h1 span:nth-child(12) {
+  animation-delay: 1.1s;
+}
+h1 span:nth-child(13) {
+  animation-delay: 1.2s;
+}
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #fbb0c1, 0 2px 0 #fbb0c1, 0 3px 0 #fbb0c1,
+      0 4px 0 #fbb0c1, 0 5px 0 #fbb0c1, 0 6px 0 #fbb0c1, 0 7px 0 #fbb0c1,
+      0 8px 0 #fbb0c1, 0 9px 0 #fbb0c1, 0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.main_img p {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+/* sub_img */
+.sub_img {
+  width: 100%;
+  height: 800px;
+  background-color: forestgreen;
+}
+
+/*  */
+/* footer */
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: salmon;
+}

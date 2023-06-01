@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "BookkMyungjo-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 공통 클래스 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Nanum Gothic", "Noto Sans KR", sans-serif;
+  font-size: 13px;
+  /* color: #777; */
+  /* line-height: 1.6; */
+  letter-spacing: -0.3px;
+  word-break: keep-all;
+}
+
+#container {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 160px;
+}
+
+.topMenu {
+  width: 100%;
+  height: 110px;
+}
+
+.topMenu .logo {
+  width: 20%;
+  height: 110px;
+  float: left;
+  line-height: 110px;
+  font-size: 20px;
+  padding-left: 30px;
+  font-family: "BookkMyungjo-Bd";
+}
+
+.topMenu .nav {
+  width: 35%;
+  height: 110px;
+  float: right;
+  line-height: 170px;
+}
+
+.topMenu .nav li {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 20px;
+}
+
+.c_menu {
+  width: 100%;
+  height: 50px;
+}
+
+.c_menu ul {
+  padding-left: 30px;
+}
+
+.c_menu li {
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 20px;
+  line-height: 50px;
+}
+
+/* main */
+main {
+  width: 100%;
+  height: 1900px;
+  /* background-color: blueviolet; */
+}
+
+.img_slide {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.img_slide ul {
+  width: 6000px;
+  font-size: 0;
+}
+
+.img_slide ul li {
+  display: inline-block;
+  font-size: 0;
+}
+
+.img_slide img {
+  width: 1500px;
+}
+
+.mainvisual {
+  width: 100%;
+  height: 560px;
+  padding-top: 100px;
+  /* background-color: rgb(141, 83, 7); */
+}
+
+.mainvisual .main_nav {
+  width: 1250px;
+  height: 360px;
+  margin: 0 auto;
+}
+
+.main_nav div {
+  width: 310px;
+  height: 360px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.main_nav img {
+  width: 280px;
+  height: 280px;
+  margin: 20px 10px 10px 10px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s linear; /* 속도 제어 => 부드럽게 가능 */
+}
+
+.main_nav img:hover {
+  filter: brightness(0.8); /* 밝기 조절 */
+}
+
+.main_nav div p {
+  font-family: "BookkMyungjo-Bd";
+  font-size: 35px;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 1px black;
+}
+
+.main_nav div span {
+  color: #666;
+}
+
+.scroll {
+  position: relative;
+  width: 1500px;
+  height: 300px;
+  background-image: url(../images/scroll_img.jpg);
+  background-repeat: no-repeat; /* 배경이미지X */
+  background-attachment: fixed; /* 스크롤바 움직일때 이미지가 따라다님 */
+  background-position: center; /* 이미지를 요소의 정가운데로 처리 */
+  background-size: cover; /* 요소를 비율에 맞게 커버  */
+  background-color: blue;
+}
+
+.scroll p {
+  text-align: center;
+  /* font-size: 20px; */
+  color: white;
+  position: absolute;
+}
+
+.scroll p:first-child {
+  font-size: 40px;
+  font-family: "BookkMyungjo-Bd";
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll p:last-child {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "S-CoreDream-3Light";
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .scroll img {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+} */
+
+/* footer */
+footer {
+  width: 1500px;
+  height: 280px;
+  font-family: "S-CoreDream-3Light";
+}
+
+hr {
+  border: 1px solid #aaa;
+}
+
+.bottomMenu ul {
+  width: 100%;
+  height: 230px;
+  padding: 40px 115px;
+}
+
+.bottomMenu li {
+  width: 180px;
+  height: 150px;
+  margin-left: 30px;
+  display: inline-block;
+  text-align: left;
+  float: left;
+}
+
+.bottomMenu p {
+  color: #555555;
+}
+
+.bottomMenu li:first-child {
+  width: 400px;
+  margin-left: 0;
+}
+
+.bottomMenu h4 {
+  margin-bottom: 10px;
+}
+
+.bottomMenu span {
+  margin-right: 10px;
+}
+
+.home {
+  width: 100%;
+  height: 50px;
+  padding: 15px 0;
+  background-color: #555555;
+}
+
+.home li {
+  float: left;
+  padding: 0 20px;
+  border-right: 1px solid white;
+}
+
+.home li:first-child {
+  padding-left: 115px;
+}
+
+.home li:last-child {
+  border: none;
+}
+
+.home a {
+  color: white;
+}

@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+.dogs {
+  width: 100%;
+  height: 1000px;
+}
+
+.dogs ul {
+  display: inline-block;
+  padding: 0;
+}
+
+.dogs ul li {
+  width: 250px;
+  height: 230px;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  float: left;
+  border: 1px solid black;
+}
+
+img {
+  width: 250px;
+  height: 170px;
+}
+
+.dog1 {
+  filter: brightness(0%);
+}
+
+.dog2 {
+  filter: brightness(50%);
+}
+
+.dog3 {
+  filter: brightness(100%);
+}
+
+.dog4 {
+  filter: brightness(200%);
+}
+
+.dogss {
+  width: 250px;
+  height: 170px;
+  background-color: indianred;
+}
+
+.dog5 {
+  opacity: 0.5;
+}
+
+.mydog {
+  /* 얘를 먼저 불러와야 함 */
+  background-image: linear-gradient(
+      rgba(235, 80, 80, 0.4),
+      rgba(20, 38, 202, 0.6)
+    ),
+    url("../images/dog_img.jpg");
+  /* background-size: 250px; */
+  background-size: cover;
+  width: 250px;
+  height: 170px;
+}
+
+.text {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+  /* background: linear-gradient(
+    45deg,
+    red 0%,
+    red 33%,
+    blue 33%,
+    blue 66%,
+    green 66%,
+    green 100%
+  ); */
+  /* background: linear-gradient(-45deg, #f2eee5, #e5c1c5, #c3e2dd, #6eceda); */
+  background: radial-gradient(circle at 20% 50%, white 30%, red 30%);
+  /* 왼쪽 상단 모서리에서 시작함. x 20% y 50% */
+  border-radius: 50%;
+}
+
+.text-linear {
+  width: 300px;
+  height: 300px;
+  background: repeating-linear-gradient(white, black 20px);
+}
+
+.text-radial {
+  width: 300px;
+  height: 300px;
+  /* background: repeating-radial-gradient(circle, white, #feda77 20%); */
+  background: repeating-radial-gradient(
+    circle,
+    white,
+    white 10%,
+    red 10%,
+    red 20%
+  );
+}
+
+.bar {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 29px;
+  margin-bottom: 100px;
+  background: linear-gradient(
+    150deg,
+    #fef5d4 0%,
+    #fef5d4 25%,
+    #ffd6aa 25%,
+    #ffd6aa 50%,
+    #efbad6 50%,
+    #efbad6 75%,
+    #dadafc 75%,
+    #dadafc 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 10px;
+  /* 가로 100% 세로 10px */
+  background-position: center bottom;
+}
+
+.name {
+  font-size: 60px;
+  font-weight: 900;
+  /* background: linear-gradient(pink, skyblue); */
+  /* color: transparent; */
+  /* background-clip: text; */
+  /* -webkit- : 구글, 사파리 브라우저에 적용
+     -moz- : 파이어폭스 브라우저에 적용
+     -ms- : 익스플로러에 적용, 보통 생략합니다.
+     -o- : 오페라 브라우저에 적용 */
+  /* -webkit-background-clip: text; */
+}
+
+.name:hover {
+  background: linear-gradient(#a18cd1, #fbc2eb);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}

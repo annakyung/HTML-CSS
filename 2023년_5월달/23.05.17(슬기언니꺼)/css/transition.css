@@ -1,0 +1,68 @@
+@charset "utf-8";
+.wrap {
+  width: 800px;
+  height: 200px;
+  margin: 20px auto;
+  background-color: rgb(209, 141, 255);
+}
+
+.nemo {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 40px;
+  background-color: blueviolet;
+}
+
+.nemo > div {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(82, 2, 102);
+}
+.movex:hover {
+  transform: scaleX(10);
+  transition: 0.5s;
+  background-color: rgb(234, 0, 255);
+}
+.movey:hover {
+  transform: scaley(5);
+  transition: 0.5s;
+  background-color: rgb(99, 42, 165);
+}
+.movexy:hover {
+  transform: scale(5, 10);
+  transition: 0.5s;
+  background-color: rgb(255, 0, 170);
+}
+
+.sup {
+  width: 800px;
+  height: 100px;
+  margin: 20px auto;
+}
+.tree {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+  background-color: chartreuse;
+}
+#rotate1:hover {
+  transform: rotateX(150deg);
+  transition: 0.3s;
+}
+#rotate2:hover {
+  transform: rotatey(150deg);
+  transition: 0.3s;
+}
+#rotate3:hover {
+  transform: rotate(150deg);
+  transition: 0.3s;
+}
+.rotate4:hover {
+  transform: rotatex(50deg);
+}
+#per {
+  perspective: 100px;
+}
