@@ -528,8 +528,11 @@ body {
 .cs {
   position: relative;
   display: block;
+  /* 선생님 코드 */
+  padding: 60px 0;
+  background-color: #f8f8f8;
 }
-
+/* 
 .cs-inner {
   position: relative;
   display: block;
@@ -539,14 +542,33 @@ body {
   padding: 60px 0 100px;
 }
 
+.cs-inner h2 {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.cs-inner a {
+  position: relative;
+  display: block;
+  float: left;
+  padding: 40px 56px;
+}
+
+.cs-inner img {
+  position: relative;
+  display: block;
+  float: left;
+}
+
 .cs-faq {
   position: relative;
   display: block;
   width: 599px;
   height: 200px;
-  padding: 40px 56px;
   float: left;
-  background-color: gray;
+  background: url("../images/bg_faq.png") no-repeat 90% center;
 }
 
 .cs-customer {
@@ -555,11 +577,205 @@ body {
   width: 599px;
   height: 200px;
   margin-left: 2px;
-  padding: 40px 56px;
   float: left;
-  background-color: gray;
+  background: url("../images/bg_custom.png") no-repeat 90% center;
+} */
+
+/* 선생님 코드 */
+.cs-link {
+  position: relative;
+  display: block;
+  width: calc(50% - 1px);
+  height: 200px;
+  background-color: #fff;
+  padding: 50px 60px;
+}
+
+.cs-inner > .cs-link:first-child {
+  float: left;
+  background: #fff url("../images/bg_faq.png") no-repeat;
+  background-position: calc(100% - 50px) 50%;
+}
+
+.cs-inner > .cs-link:last-child {
+  float: right;
+  background: #fff url("../images/bg_custom.png") no-repeat;
+  background-position: calc(100% - 50px) 50%;
+}
+
+.cs-link h3 {
+  position: relative;
+  display: block;
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 /* 회사소개 */
+.about {
+  position: relative;
+  display: block;
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.about-inner {
+  position: relative;
+  display: block;
+}
+
+.about-top {
+  position: relative;
+  display: block;
+  background: url("../images/img_about.png") no-repeat;
+  background-position: 100% 50%;
+  margin-bottom: 80px;
+  height: 370px;
+}
+
+.about-top > h2 {
+  position: relative;
+  display: block;
+  font-size: 44px;
+  color: #111;
+  font-weight: 600;
+  padding-top: 35px;
+  margin-bottom: 55px;
+  text-transform: uppercase;
+}
+
+.about-top > p {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  padding-left: 100px;
+  padding-bottom: 70px;
+  /* float: left; */
+}
+
+.about-top > p::before {
+  position: absolute;
+  content: "";
+  width: 37px;
+  height: 5px;
+  background-color: #ed1c24;
+  top: 0px;
+  left: 0px;
+}
+
+.about-top > p > b {
+  position: relative;
+  display: block;
+  font-size: 21px;
+  font-weight: 500;
+  color: #111;
+  padding-bottom: 25px;
+}
+
+.about-bottom {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.about-list {
+  position: relative;
+  display: inline-block;
+}
+
+.about-list > li {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.about-list > li > a {
+  position: relative;
+  display: block;
+  font-size: 22px;
+  color: #111;
+  font-weight: 500;
+}
+
+.about-list > li > a::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 110px;
+  height: 108px;
+  margin-bottom: 25px;
+  background: url("../images/bg_icon.png") no-repeat;
+}
+
+.about-list > li:nth-child(2) {
+  margin: 0 200px;
+}
+
+.about-list > li:nth-child(1) > a::before {
+  background-position: 0px 0px;
+}
+
+.about-list > li:nth-child(2) > a::before {
+  background-position: -110px 0px;
+}
+
+.about-list > li:nth-child(3) > a::before {
+  background-position: -220px 0px;
+}
 
 /* 푸터 */
+.footer {
+  position: relative;
+  display: block;
+  padding: 50px 0;
+  background-color: #4e4e4e;
+}
+
+.footer-inner {
+  position: relative;
+  display: block;
+}
+
+.footer-logo {
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 130px;
+}
+
+/* .footer-logo > img {
+  width: 128px;
+  height: 23px;
+} */
+
+.footer-info {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.footer-list {
+  position: relative;
+  display: block;
+}
+
+.footer-list > li {
+  position: relative;
+  display: block;
+  font-size: 13px;
+  color: #c3c3ce;
+  margin-bottom: 10px;
+}
+
+.footer-list > li > address {
+  position: relative;
+  display: block;
+  font-style: normal;
+  /* address는 기울진게 기본 스타일이므로 normal을 사용함으로써 정상적으로 돌려놓음 */
+}
+
+.footer-list > li > i {
+  position: relative;
+  display: inline-block;
+}
