@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onclick 연습</title>
+  </head>
+  <body>
+    <button onclick="sayHello()">안녕</button>
+    <button onclick="warning()">경고</button>
+    <button onclick="showElement()">보이기</button>
+    <button onclick="hideElement()">가리기</button>
+
+    <div id="myElement" style="display: none">
+      이 요소를 보이기/가리기 합니다!
+    </div>
+    <script>
+      function sayHello() {
+        console.log("안녕하세요!");
+      }
+
+      function warning() {
+        console.log("경고!");
+        alert("경고합니다!");
+      }
+
+      function showElement() {
+        const element = document.getElementById("myElement");
+        element.style.display = "block";
+      }
+
+      function hideElement() {
+        const element = document.getElementById("myElement");
+        element.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
